@@ -1,5 +1,7 @@
 # 283. Move Zeroes
 # https://leetcode.com/problems/move-zeroes/description/
+
+
 class Solution:
     def moveZeroes(self, nums: list[int]) -> None:
         """
@@ -22,8 +24,7 @@ class Solution:
         left = 0
         for right, num in enumerate(nums):
             if num != 0:
-                if nums[left] == 0:
-                    nums[left], nums[right] = nums[right], nums[right]
+                nums[left], nums[right] = nums[right], nums[right]
                 left += 1
 
 
