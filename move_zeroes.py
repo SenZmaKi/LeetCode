@@ -1,4 +1,5 @@
 # 283. Move Zeroes
+# https://leetcode.com/problems/move-zeroes/description/
 class Solution:
     def moveZeroes(self, nums: list[int]) -> None:
         """
