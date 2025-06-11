@@ -1,5 +1,7 @@
 # 392. Is Subsequence
 # https://leetcode.com/problems/is-subsequence/description/
+
+
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         if not s:
