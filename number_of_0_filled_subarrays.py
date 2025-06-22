@@ -4,6 +4,7 @@
 
 class Solution:
     # Time Cx: O(n), Space Cx: O(1)
+    # Triangular numbers
     def zeroFilledSubarray(self, nums: list[int]) -> int:
         count = 0
         curr_count = 0
