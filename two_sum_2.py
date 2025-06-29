@@ -22,6 +22,7 @@ class Solution:
                 return [idx + 1, other_idx + 1]
         raise ValueError("No two sum in:", numbers)
 
+    # Two pointers problem
     # Time Cx: O(n), Space Cx O(1)
     def twoSumCorrect(self, numbers: list[int], target: int) -> list[int]:
         left = 0
