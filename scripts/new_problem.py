@@ -35,7 +35,7 @@ def create_problem_file(problem: ProblemMetadata) -> Path:
     filename = problem.title.lower().replace(" ", "_")
     filepath = PROBLEMS_FOLDER / f"{filename}.py"
     with filepath.open("w") as f:
-        contents = f"# {problem.id}. {problem.title}\n# {problem.url}\n\n\n"
+        contents = f"# {problem.id}. {problem.title}\n# {problem.url}\n# {problem.diffculty}\n\n\n"
         f.write(contents)
     return filepath
 
