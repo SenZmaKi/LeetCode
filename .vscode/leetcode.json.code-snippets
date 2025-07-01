@@ -24,14 +24,25 @@
 		"description": "Add time and space complexity comments"
 	},
 
-	"Solution": {
-		"prefix": "sol",
+	"Result": {
+		"prefix": "res",
 		"body": [
 			"sol = Solution()",
 			"$2 = $3",
 			"res = sol.$4($2)",
 			"print(res)",
 		],
-		"description": "Add time and space complexity comments"
+		"description": "Run solution and print result"
+	},
+
+	"Solution": {
+		"prefix": "sol",
+		"body": [
+			"class Solution:",
+			"    def $1(self, $2)$3:",
+			"        $4",
+			"        return $5",
+		],
+		"description": "Define a solution class"
 	}
 }
