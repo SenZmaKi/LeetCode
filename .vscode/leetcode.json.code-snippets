@@ -19,7 +19,7 @@
 	"Complexity": {
 		"prefix": "cx",
 		"body": [
-			"# Time Cx: $1, Space Cx: $2",
+			"# Time Cx: O($1), Space Cx: O($2)",
 		],
 		"description": "Add time and space complexity comments"
 	},
