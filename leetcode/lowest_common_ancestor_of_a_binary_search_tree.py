@@ -51,6 +51,10 @@ class Solution:
         return lowest
 
     # Time Cx: O(n), Space Cx: O(1)
+    # The trick is that the LCA is the first node where
+    # p and q branch of to different subtrees e.g.
+    # p is in the left subtree while q is in the right subtree
+    # as opposed to both being in the maybe the left subtree
     def lowestCommonAncestorCorrect(
         self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
     ) -> "TreeNode":
