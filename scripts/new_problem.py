@@ -37,7 +37,10 @@ def get_problem_metadata(id: int) -> ProblemMetadata:
 
 def create_problem_file(problem: ProblemMetadata) -> Path:
     log.info("Creating problem file")
-    filename = problem.title.lower().replace(" ", "_")
+    # Use title from url cause it's already sanitized
+    # for file title compatibility
+    url_problem_title = problem.url.split("/")[-2]
+    filename = url_problem_title.replace("-", "_")
     filepath = PROBLEMS_FOLDER / f"{filename}.py"
     with filepath.open("w") as f:
         contents = f"# {problem.id}. {problem.title}\n# {problem.url}\n# {problem.diffculty}\n\n\n"
